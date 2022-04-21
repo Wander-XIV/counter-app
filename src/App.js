@@ -4,11 +4,9 @@ import mixpanel from "mixpanel-browser";
 mixpanel.init("644d3e7c8c808b235ddb4e9057b95cad", {
   debug: true,
 });
-
-function App() {
-
 mixpanel.track("Page Loaded");
 
+function App() {
   let btnIncrease = (e) => {
     mixpanel.track("Increase was clicked.");
   };
